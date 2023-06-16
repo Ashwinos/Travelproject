@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+
+    <title>login</title>
+</head>
+<body>
+</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="login" method="post">
+			{% csrf_token %}
+			<h1>Welcome🕊️</h1>
+
+
+			<input type="text" name="username" placeholder="username"  />
+			<input type="password" name="password" placeholder="password" />
+
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>
